@@ -18,11 +18,16 @@ export const Grocery= () => {
 		
 	}
 
+	const handleDelete= (id) => {
+		setGroceries(groceries.filter((del) => del.id!==id))
+		console.log("ss", groceries)
+	}
+
 	return (
 		<div>
 			<Groceryinput addToList={addToList} />
 			{groceries.map((e) => {
-				return <GroceryList key={e.id} {...e}/>
+				return <GroceryList handleDelete= {handleDelete} key={e.id} {...e}/>
 			})}
 			
 		</div>

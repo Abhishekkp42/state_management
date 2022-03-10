@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Groceryinput } from './components/Groceryinput';
+import { Grocery } from './components/Grocery';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <Groceryinput />
+      <Grocery />
 
 
       {/* <Left getData={getData} />
